@@ -15,7 +15,7 @@ jobs:
            bash setup/android_build_env.sh
            bash setup/install_android_sdk.sh
            cd ..
-           wget https://raw.githubusercontent.com/immat0x1/android_device_xiaomi_ysl_orangefox/android-9.0/.circleci/of_ci.sh
+           wget https://raw.githubusercontent.com/immat0x1/ofox_device_xiaomi_ysl/android-9.0/.circleci/of_ci.sh
            bash of_ci.sh
 workflows:
   version: 2.1

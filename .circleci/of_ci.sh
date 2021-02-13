@@ -39,7 +39,7 @@ CODENAME="ysl"
 
 # DT variables
 DEVICE_BRANCH="$dt_branch"
-DEVICE_TREE="https://github.com/immat0x1/device_xiaomi_ysl_ofox"
+DEVICE_TREE="https://github.com/immat0x1/ofox_device_xiaomi_ysl"
 
 # Manifest branch
 OF_MANIFEST="fox_9.0"
