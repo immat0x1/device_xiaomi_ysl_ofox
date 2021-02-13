@@ -5,8 +5,8 @@
 /system_root    ext4   /dev/block/bootdevice/by-name/system                      flags=backup=0;display="System"
 /vendor         ext4   /dev/block/bootdevice/by-name/vendor                      flags=display="Vendor";wipeingui
 
-/system_image   emmc   /dev/block/bootdevice/by-name/system
-/vendor_image   emmc   /dev/block/bootdevice/by-name/vendor
+/system_image   emmc      /dev/block/bootdevice/by-name/system             flags=display="System (Image)";backup=1;flashimg=1
+/vendor_image   emmc      /dev/block/bootdevice/by-name/vendor             flags=display="Vendor (Image)";backup=1;flashimg=1
 /data           ext4   /dev/block/bootdevice/by-name/userdata                    flags=encryptable=footer
 /firmware       vfat   /dev/block/bootdevice/by-name/modem                       flags=display="Firmware";mounttodecrypt
 /persist        ext4   /dev/block/bootdevice/by-name/persist                     flags=display="Persist";flashimg=1
@@ -14,6 +14,7 @@
 /cust           ext4   /dev/block/bootdevice/by-name/cust                        flags=display="Cust"
 /misc           emmc   /dev/block/bootdevice/by-name/misc
 /modem          emmc   /dev/block/bootdevice/by-name/modem                       flags=backup=1;display="Modem"
+/splash         emmc      /dev/block/bootdevice/by-name/splash               flags=display="Splash";backup=1;flashimg=1
 /dsp            emmc   /dev/block/bootdevice/by-name/dsp                         flags=backup=1;subpartitionof=/modem
 /efs1           emmc   /dev/block/bootdevice/by-name/modemst1                    flags=backup=1;display="EFS"
 /efs2           emmc   /dev/block/bootdevice/by-name/modemst2                    flags=backup=1;subpartitionof=/efs1
